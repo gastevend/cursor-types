@@ -10,11 +10,35 @@ div {
 	float: left;
 }
 
-p {
+h1 {
 	text-align: center;
-	line-height: 250px;
-	margin: 0;
+	margin: 80px 0 0 0;
 	font-family: "Baloo Bhaina" , sans-serif;
 	font-size: 24px;
 }
+
+p {
+	text-align: center;
+	/*margin: 0;*/
+	font-size: 14px;
+}
+
+@media (max-width: 1616px) {
+	main {
+		max-width: 1200px;
+	}
+}
+
+@media (max-width: 1216px) {
+	main {
+		max-width: 800px;
+	}
+}
+
+@media (max-width: 816px) {
+	main {
+		max-width: 400px;
+	}
+}
+
 

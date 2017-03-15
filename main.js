@@ -168,9 +168,12 @@ var createBoard = function () {
 		divs.setAttribute("data-id", i);
 		divs.addEventListener("mouseover", addHover);
 		document.getElementsByTagName('main')[0].appendChild(divs);
-		var cursorHtml = document.createElement('p');
-		cursorHtml.innerHTML = cursors[i].name;
-		divs.appendChild(cursorHtml);
+		var header = document.createElement('h1');
+		var desc = document.createElement('p')
+		header.innerHTML = cursors[i].name;
+		desc.innerHTML = cursors[i].description;
+		divs.appendChild(header);
+		divs.appendChild(desc);
 	}
 }
 
